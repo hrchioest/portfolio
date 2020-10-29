@@ -1,0 +1,152 @@
+header {
+  background-color: $grayDark;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  .container-logo-name {
+    color: $white;
+    display: flex;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      justify-content: center;
+    }
+  }
+  @mixin phone {
+    margin: 0;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: column;
+    display: block;
+    text-align: center;
+  }
+}
+
+svg {
+  padding-left: 11px;
+}
+.space-name {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  align-items: flex-end;
+}
+#ul-header {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    justify-content: center;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: $white;
+  padding: 10px;
+  font-size: 20px;
+  &:hover {
+    border-bottom: 2px solid $white;
+  }
+}
+.text-link {
+  padding: 0;
+}
+.link-mobile {
+  padding: 30px;
+}
+
+.menu-item {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+#icono-burger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #ul-header {
+    display: none;
+  }
+
+  #icono-burger {
+    display: block;
+    font-size: 30px;
+    color: #66d7c4;
+  }
+}
+.menu-mobile {
+  z-index: 1;
+  position: absolute;
+  bottom: 680px;
+  right: 0;
+  transition: 1s;
+}
+
+.barra-mobile {
+  flex-direction: column;
+  display: flex;
+  background-color: $grayDark;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.menu-desplegado {
+  right: 0;
+  top: 49px;
+}
+
+.burger {
+  position: absolute;
+  top: 17px;
+  right: 0px;
+}
+
+@media (min-width: 768px) {
+  .burger-x {
+    display: none;
+  }
+}
+.lbl-menu {
+  width: 50px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+#spn1,
+#spn2,
+#spn3 {
+  position: absolute;
+  content: "";
+  background-color: $turquoise;
+  width: 33px;
+  height: 5px;
+  border-radius: 5px;
+  transition: all 400ms ease;
+}
+#spn2 {
+  top: 11px;
+}
+#spn3 {
+  top: 22px;
+}
+#btn-menu {
+  display: none;
+}
+#btn-menu:checked ~ .lbl-menu #spn1 {
+  transform: rotate(140deg);
+  top: 10px;
+}
+#btn-menu:checked ~ .lbl-menu #spn2 {
+  opacity: 0;
+}
+#btn-menu:checked ~ .lbl-menu #spn3 {
+  transform: rotate(-140deg);
+  top: 10px;
+}

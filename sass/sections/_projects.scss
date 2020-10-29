@@ -1,0 +1,93 @@
+.projects {
+  text-align: center;
+  background-color: $smoke;
+  border: 1px #dddfe5 solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 330px;
+  height: 287px;
+  margin: 10px;
+  padding: 30px;
+  color: #2e2e31;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.section-projects {
+  background-color: #e9ea6026;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.container-projects {
+  display: flex;
+  margin-top: 40px;
+  padding: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
+}
+.title-projects {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 0;
+}
+.img-projects {
+  object-position: center;
+  width: 240px;
+  border: 2px solid $ligth;
+  border-radius: 8px;
+  @media (min-width: 600px) and (max-width: 900px) {
+    margin: 5px 35px 5px 35px;
+    width: 268px;
+  }
+
+  @media (min-width: 1025px) {
+    width: 314px;
+    height: 210px;
+  }
+}
+.botonera-proyectos {
+  justify-content: center;
+  padding: 20px 0;
+  margin: 20px auto 10px auto;
+}
+.container-texts-project {
+  padding-left: 60px;
+  @media (max-width: 767px) {
+    padding-left: 19px;
+  }
+}
+.menu-proyectos {
+  font-size: 16px;
+  background-color: #d3faf526;
+  border: none;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+
+.menu-proyectos:hover {
+  background-color: $turquoiseDark;
+  border-radius: 25px;
+  color: #d3faf5;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.container-title-project {
+  margin-left: 70px;
+  font-size: 2em;
+}
+i {
+  font-size: 30px;
+  color: gray;
+  padding: 10px;
+}
+.container-github-enlace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

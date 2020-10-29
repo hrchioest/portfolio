@@ -1,0 +1,38 @@
+.section-skills {
+  background-color: $gray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container-skills {
+  display: flex;
+  width: 80%;
+  margin-top: 40px;
+  padding: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills {
+  background-color: $smoke;
+  border: 1px $graySmoke solid;
+  border-radius: 10px;
+  width: 180px;
+  height: 159px;
+  margin: 10px;
+  padding: 30px;
+  color: $grayMedium;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-skills {
+  margin: 20px 60px 20px 60px;
+}
+
+.p-titulo-skills {
+  font-weight: 700;
+  font-size: 20px;
+}

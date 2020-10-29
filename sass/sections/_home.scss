@@ -27,9 +27,11 @@
   text-align: center;
 }
 .foto {
-  @mixin desktop {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
+  @media (max-width: 767px) {
+    width: 200px;
+    height: 200px;
   }
 }
 .portada {

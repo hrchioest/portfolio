@@ -125,7 +125,7 @@ ul {
 }
 .menu-mobile {
   z-index: 1;
-  position: absolute;
+  position: fixed;
   bottom: 680px;
   right: 0;
   transition: 1s;

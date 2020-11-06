@@ -291,7 +291,7 @@ ul {
   width: 80%;
   margin-top: 40px;
   padding: 30px;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -344,7 +344,7 @@ ul {
   display: flex;
   margin-top: 40px;
   padding: 30px;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 @media (max-width: 767px) {
@@ -361,7 +361,7 @@ ul {
 
 .img-projects {
   object-position: center;
-  width: 240px;
+  width: 280px;
   border: 2px solid #ddd;
   border-radius: 8px;
 }
@@ -374,7 +374,7 @@ ul {
 @media (min-width: 1025px) {
   .img-projects {
     width: 314px;
-    height: 210px;
+    height: 190px;
   }
 }
 

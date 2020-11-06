@@ -8,17 +8,6 @@ header {
   .container-logo-name {
     color: $white;
     display: flex;
-    @media (min-width: 768px) and (max-width: 1024px) {
-      justify-content: center;
-    }
-  }
-  @mixin phone {
-    margin: 0;
-  }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    flex-direction: column;
-    display: block;
-    text-align: center;
   }
 }
 
@@ -36,11 +25,6 @@ ul {
   display: flex;
   list-style-type: none;
   align-items: flex-end;
-}
-#ul-header {
-  @media (min-width: 768px) and (max-width: 1024px) {
-    justify-content: center;
-  }
 }
 
 .nav-link {
@@ -68,17 +52,6 @@ ul {
   display: none;
 }
 
-@media (max-width: 767px) {
-  #ul-header {
-    display: none;
-  }
-
-  #icono-burger {
-    display: block;
-    font-size: 30px;
-    color: #66d7c4;
-  }
-}
 .menu-mobile {
   z-index: 1;
   position: fixed;
@@ -91,10 +64,6 @@ ul {
   flex-direction: column;
   display: flex;
   background-color: $grayDark;
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    display: none;
-  }
 }
 
 .menu-desplegado {
@@ -108,11 +77,6 @@ ul {
   right: 0px;
 }
 
-@media (min-width: 768px) {
-  .burger-x {
-    display: none;
-  }
-}
 .lbl-menu {
   width: 50px;
   height: 30px;
@@ -149,4 +113,37 @@ ul {
 #btn-menu:checked ~ .lbl-menu #spn3 {
   transform: rotate(-140deg);
   top: 10px;
+}
+
+@include tablet {
+  header {
+    flex-direction: column;
+    display: block;
+    text-align: center;
+  }
+  header .container-logo-name {
+    justify-content: center;
+  }
+  #ul-header {
+    justify-content: center;
+  }
+  .barra-mobile {
+    display: none;
+  }
+}
+@include phone {
+  header {
+    margin: 0;
+  }
+  #ul-header {
+    display: none;
+  }
+  .burger-x {
+    display: none;
+  }
+  #icono-burger {
+    display: block;
+    font-size: 30px;
+    color: #66d7c4;
+  }
 }

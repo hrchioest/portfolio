@@ -25,9 +25,6 @@
   padding: 30px;
   justify-content: space-around;
   flex-wrap: wrap;
-  @media (max-width: 767px) {
-    margin-top: 0;
-  }
 }
 .title-projects {
   font-weight: 700;
@@ -39,15 +36,6 @@
   width: 280px;
   border: 2px solid $ligth;
   border-radius: 8px;
-  @media (min-width: 600px) and (max-width: 900px) {
-    margin: 5px 35px 5px 35px;
-    width: 268px;
-  }
-
-  @media (min-width: 1025px) {
-    width: 314px;
-    height: 190px;
-  }
 }
 .botonera-proyectos {
   justify-content: center;
@@ -56,9 +44,6 @@
 }
 .container-texts-project {
   padding-left: 60px;
-  @media (max-width: 767px) {
-    padding-left: 19px;
-  }
 }
 .menu-proyectos {
   font-size: 16px;
@@ -90,4 +75,25 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@include desktop {
+  .img-projects {
+    width: 314px;
+    height: 190px;
+  }
+}
+@include tablet {
+  .img-projects {
+    margin: 5px 35px 5px 35px;
+    width: 268px;
+  }
+}
+@include phone {
+  .container-projects {
+    margin-top: 0;
+  }
+  .container-texts-project {
+    padding-left: 19px;
+  }
 }

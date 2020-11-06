@@ -12,10 +12,6 @@
     background-color: $yellow;
     border-color: $yellow;
   }
-  @media (max-width: 767px) {
-    font-size: 16px;
-    width: auto;
-  }
 }
 
 .text-home {
@@ -29,32 +25,43 @@
 .foto {
   width: 300px;
   height: 300px;
-  @media (max-width: 767px) {
-    width: 200px;
-    height: 200px;
-  }
 }
 .portada {
   width: 640px;
   margin: 20px;
-  @media (max-width: 767px) {
-    width: 338px;
-  }
 }
 
 .home {
   display: flex;
   align-items: center;
-
   justify-content: center;
-  @media (max-width: 767px) {
+}
+
+@include desktop {
+  .home {
+    padding-top: 72px;
+  }
+}
+
+@include tablet {
+  .home {
+    flex-direction: column;
+  }
+}
+@include phone {
+  .home {
     flex-direction: column;
     padding: 60px 0 18px 0;
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    flex-direction: column;
+  .portada {
+    width: 338px;
   }
-  @media (min-width: 1025px) {
-    padding-top: 72px;
+  .foto {
+    width: 200px;
+    height: 200px;
+  }
+  .nav-projects {
+    font-size: 16px;
+    width: auto;
   }
 }

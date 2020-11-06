@@ -291,7 +291,7 @@ ul {
   width: 80%;
   margin-top: 40px;
   padding: 30px;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -344,7 +344,7 @@ ul {
   display: flex;
   margin-top: 40px;
   padding: 30px;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 @media (max-width: 767px) {

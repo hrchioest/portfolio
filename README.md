@@ -8,5 +8,5 @@ Fue elaborado muy simple en:
 
 **Ver online**: http://hrchioest.github.io/portfolio
 
-Vista previa de la landing-portfolio:
-![pag](https://raw.githubusercontent.com/hrchioest/portfolio/master/public/screen-page.png)
+
+![pag](https://raw.githubusercontent.com/hrchioest/portfolio/master/public/img/projects/scremshot-about.png)

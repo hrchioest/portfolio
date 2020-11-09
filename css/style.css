@@ -136,7 +136,7 @@ ul {
 .menu-mobile {
   z-index: 1;
   position: fixed;
-  bottom: 680px;
+  bottom: 660px;
   right: 0;
   transition: 1s;
 }
@@ -149,7 +149,7 @@ ul {
 
 .menu-desplegado {
   right: 0;
-  top: 49px;
+  top: 46px;
 }
 
 .burger {
@@ -203,6 +203,11 @@ ul {
   top: 10px;
 }
 
+@media (min-width: 1025px) {
+  .barra-mobile {
+    display: none;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   header {
     flex-direction: column;

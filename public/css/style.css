@@ -139,6 +139,7 @@ ul {
   bottom: 680px;
   right: 0;
   transition: 1s;
+  top: -359px;
 }
 
 .barra-mobile {
@@ -149,7 +150,7 @@ ul {
 
 .menu-desplegado {
   right: 0;
-  top: 49px;
+  top: 100px;
 }
 
 .burger {

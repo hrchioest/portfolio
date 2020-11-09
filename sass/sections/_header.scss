@@ -55,10 +55,9 @@ ul {
 .menu-mobile {
   z-index: 1;
   position: fixed;
-  bottom: 680px;
+  bottom: 660px;
   right: 0;
   transition: 1s;
-  top: -359px;
 }
 
 .barra-mobile {
@@ -69,7 +68,7 @@ ul {
 
 .menu-desplegado {
   right: 0;
-  top: 100px;
+  top: 46px;
 }
 
 .burger {
@@ -114,6 +113,11 @@ ul {
 #btn-menu:checked ~ .lbl-menu #spn3 {
   transform: rotate(-140deg);
   top: 10px;
+}
+@include desktop {
+  .barra-mobile {
+    display: none;
+  }
 }
 
 @include tablet {

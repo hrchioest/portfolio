@@ -136,7 +136,7 @@ ul {
 .menu-mobile {
   z-index: 1;
   position: fixed;
-  bottom: 660px;
+  bottom: 728px;
   right: 0;
   transition: 1s;
 }
@@ -433,7 +433,6 @@ i {
 @media (min-width: 1025px) {
   .img-projects {
     width: 314px;
-    height: 190px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {

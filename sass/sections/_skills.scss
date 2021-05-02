@@ -9,7 +9,6 @@
 .container-skills {
   display: flex;
   width: 80%;
-  margin-top: 40px;
   padding: 30px;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -19,8 +18,8 @@
   background-color: $smoke;
   border: 1px $graySmoke solid;
   border-radius: 10px;
-  width: 180px;
-  height: 159px;
+  width: 146px;
+  height: 107px;
   margin: 10px;
   padding: 30px;
   color: $grayMedium;
@@ -29,7 +28,7 @@
 }
 
 .img-skills {
-  margin: 20px 60px 20px 60px;
+  text-align: center;
 }
 
 .p-titulo-skills {

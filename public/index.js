@@ -13,3 +13,25 @@ for (let link of links) {
     menuMobile.classList.remove("menu-desplegado");
   };
 }
+
+// MENU DE PROYECTOS
+const buttonProjects = document.querySelectorAll(".js-button-project");
+const projects = document.querySelectorAll(".projects");
+const buttonAll = document.querySelector("#button-all");
+
+for (let button of buttonProjects) {
+  button.onclick = () => {
+    buttonAll.classList.remove("active");
+    for (let project of projects) {
+      const boton = button.dataset.name;
+      const projectSelect = project.dataset.name;
+      if (boton === projectSelect) {
+        project.classList.remove("hidden");
+      } else if (boton === "all") {
+        project.classList.remove("hidden");
+      } else {
+        project.classList.add("hidden");
+      }
+    }
+  };
+}

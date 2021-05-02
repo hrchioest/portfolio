@@ -22,7 +22,6 @@
 .container-projects {
   display: flex;
   margin-top: 40px;
-  padding: 30px;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -36,6 +35,8 @@
   width: 280px;
   border: 2px solid $ligth;
   border-radius: 8px;
+  -webkit-transition: all 0.3s ease 0s, height 0s ease 0s;
+  transition: all 0.3s ease 0s, height 0s ease 0s;
 }
 .botonera-proyectos {
   justify-content: center;
@@ -47,19 +48,17 @@
 }
 .menu-proyectos {
   font-size: 16px;
-  background-color: #d3faf526;
   border: none;
   padding: 15px 40px;
   text-decoration: none;
   border-radius: 25px;
   transition: 0.4s;
+  text-align: center;
 }
 
 .menu-proyectos:hover {
-  background-color: $turquoiseDark;
   border-radius: 25px;
   color: #d3faf5;
-  padding: 10px 40px;
   cursor: pointer;
 }
 .container-title-project {
@@ -71,15 +70,45 @@ i {
   color: gray;
   padding: 10px;
 }
+
 .container-github-enlace {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.space-project {
+  padding: 18px 37px;
+  background: #fcfce7;
+  margin: 10px;
+  color: black;
+  text-align: center;
+  border: none;
+  font-size: 19px;
+  width: 145px;
+}
+.hidden {
+  display: none;
+}
 
+.space-project:hover {
+  border-bottom: 3px solid #232a35;
+}
+
+.space-project:focus {
+  border-bottom: 3px solid #232a35;
+}
+
+.active {
+  border-bottom: 3px solid #232a35;
+}
+.animation {
+  overflow: hidden;
+}
 @include desktop {
   .img-projects {
-    width: 314px;
+    width: 328px;
+    -webkit-transition: all 0.3s ease 0s, height 0s ease 0s;
+    transition: all 0.3s ease 0s, height 0s ease 0s;
   }
 }
 @include tablet {
@@ -94,5 +123,10 @@ i {
   }
   .container-texts-project {
     padding-left: 19px;
+  }
+  .menu-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
   }
 }

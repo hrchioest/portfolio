@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap">
+    <link rel="icon" href="img/favicon.ico" type="img/graphicdesign">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
@@ -59,7 +60,7 @@
             <h1>Front-end Developer</h1>
             <div>
                 <a class="button-project" href="#projects">Proyectos</a>
-                <a class="button-cv" href="resorce/CV_RocioEstebanI .pdf" download="">Descargar CV</a>
+                <a class="button-cv" href="resorce/CV_RocioEstebanI.pdf" download="">Descargar CV</a>
             </div>
         </div>
     </section>
@@ -73,9 +74,8 @@
                 fascinó
                 mucho,
                 lo encuentro muy apasionante por todo lo que se
-                puede hacer y crear, mi objetivo principal es seguir creciendo en este ámbito, enfrentándome a los
-                desafíos que se
-                presenten.
+                puede hacer y crear. Mi objetivo es seguir fortaleciendo mis conociemientos en base a la experiencia y
+                nuevos desafios.
             </p>
             <p class="text-paragraph">Soy proactiva, me adapto fácilmente a los equipos de trabajo y me gusta seguir
                 aprendiendo y explorando en nuevas herramientas tecnológicas para una mejora continua.</p>
@@ -96,6 +96,34 @@
         </div>
         <div class="container-skills">
             <div class="skills">
+                <img class="img-skills" src="./img/skills/javascript.svg" alt="JavaScript" />
+                <p class="p-titulo-skills">JavaScript</p>
+            </div>
+            <div class="skills">
+                <img class="img-skills" src="./img/skills/react.svg" alt="React" />
+                <p class="p-titulo-skills">React Js</p>
+            </div>
+            <div class="skills">
+                <img class="img-skills" src="./img/skills/next-js.svg" alt="next-js" />
+                <p class="p-titulo-skills">Next Js</p>
+            </div>
+            <div class="skills">
+                <img class="img-skills" src="./img/skills/nodejs-1.svg" alt="Node-js" />
+                <p class="p-titulo-skills">Node Js</p>
+            </div>
+            <div class="skills">
+                <img class="img-skills" src="./img/skills/vercel.svg" alt="React" />
+                <p class="p-titulo-skills">Vercel</p>
+            </div>
+            <div class="skills">
+                <img class="img-skills" src="./img/skills/firebase.svg" alt="Firebase" />
+                <p class="p-titulo-skills">Firebase</p>
+            </div>
+            <div class="skills">
+                <img class="img-skills" src="./img/skills/docker-3.svg" alt="Firebase" />
+                <p class="p-titulo-skills">Docker</p>
+            </div>
+            <div class="skills">
                 <img class="img-skills" src="./img/skills/html5.svg" alt="HTML5" />
                 <p class="p-titulo-skills">HTML5</p>
             </div>
@@ -108,28 +136,12 @@
                 <p class="p-titulo-skills">SASS</p>
             </div>
             <div class="skills">
-                <img class="img-skills" src="./img/skills/javascript.svg" alt="JavaScript" />
-                <p class="p-titulo-skills">JavaScript</p>
-            </div>
-            <div class="skills">
-                <img class="img-skills" src="./img/skills/react.svg" alt="React" />
-                <p class="p-titulo-skills">React Js</p>
-            </div>
-            <div class="skills">
-                <img class="img-skills" src="./img/skills/firebase.svg" alt="Firebase" />
-                <p class="p-titulo-skills">Firebase</p>
-            </div>
-            <div class="skills">
                 <img class="img-skills" src="./img/skills/bootstrap.svg" alt="GIT" />
                 <p class="p-titulo-skills">Bootstrap</p>
             </div>
             <div class="skills">
-                <img class="img-skills" src="./img/skills/git.svg" alt="GIT" />
-                <p class="p-titulo-skills">GIT</p>
-            </div>
-            <div class="skills">
-                <img class="img-skills" src="./img/skills/github.svg" alt="GIT" />
-                <p class="p-titulo-skills">GitHub</p>
+                <img class="img-skills" src="./img/skills/material-ui-1.svg" alt="GIT" />
+                <p class="p-titulo-skills">Material UI</p>
             </div>
             <div class="skills">
                 <img class="img-skills" src="./img/skills/figma.svg" alt="GIT" />
@@ -138,6 +150,14 @@
             <div class="skills">
                 <img class="img-skills" src="./img/skills/adobe-xd.svg" alt="GIT" />
                 <p class="p-titulo-skills">Adobe XD</p>
+            </div>
+            <div class="skills">
+                <img class="img-skills" src="./img/skills/git.svg" alt="GIT" />
+                <p class="p-titulo-skills">GIT</p>
+            </div>
+            <div class="skills">
+                <img class="img-skills" src="./img/skills/github.svg" alt="GIT" />
+                <p class="p-titulo-skills">GitHub</p>
             </div>
         </div>
     </section>
@@ -148,101 +168,140 @@
         <div class="container-texts-project">
             <h2 class="title">Mis Proyectos</h2>
         </div>
+        <div class="menu-proyectos">
+            <button data-name="all" class="space-project js-button-project button-active" id="button-all">Todos</button>
+            <button data-name="next" class="space-project js-button-project">Next js</button>
+            <button data-name="react" class="space-project js-button-project">React js</button>
+            <button data-name="js" class="space-project js-button-project">JavaScript</button>
+            <button data-name="html" class="space-project js-button-project">HTML/CSS</button>
+            <button data-name="ux" class="space-project js-button-project">UX & UI</button>
+        </div>
         <div class="container-projects">
-            <div data-name="html" class="projects">
-                <a href="https://catalog-movies-series.netlify.app/" class="text-link">
+            <div data-name="next" class="projects">
+                <a target=“_blank” href="https://ppi-web-oxlajuj-git-main-ada1.vercel.app/" class="text-link">
+                    <img class="img-projects" src="./img/projects/fundation.png" alt="Catálogo de movies y series" />
+                </a>
+                <div class="container-title-github">
+                    <p class="title-projects">Web-Fundación</p>
+                    <div class="container-github-enlace">
+                        <a target=“_blank” href="https://ppi-web-oxlajuj-git-main-ada1.vercel.app/" class="text-link">
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-name="react" class="projects">
+                <a target=“_blank” href="https://catalog-movies-series.netlify.app/" class="text-link">
                     <img class="img-projects" src="./img/projects/movie-tv.png" alt="Catálogo de movies y series" />
                 </a>
                 <div class="container-title-github">
                     <p class="title-projects">Catálogo-Movies-TvSeries</p>
                     <div class="container-github-enlace">
-                        <a href="https://github.com/hrchioest/React-Movies-TVShows" class="text-link">
+                        <a target=“_blank” href="https://github.com/hrchioest/React-Movies-TVShows" class="text-link">
                             <i class="fab fa-github"></i>
+                        </a>
+                        <a target=“_blank” href="https://catalog-movies-series.netlify.app/" class="text-link">
+                            <i class="fa fa-link" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
             </div>
-            <div data-name="html" class="projects">
-                <a href=" https://hrchioest.github.io/react-ecommerce/" class="text-link">
+            <div data-name="react" class="projects">
+                <a target=“_blank” href=" https://hrchioest.github.io/react-ecommerce/" class="text-link">
                     <img class="img-projects" src="./img/projects/ecommerce.png" alt="imagen de E-commerce" />
                 </a>
                 <div class="container-title-github">
                     <p class="title-projects">E-commerce</p>
                     <div class="container-github-enlace">
-                        <a href="https://github.com/hrchioest/react-ecommerce" class="text-link">
+                        <a target=“_blank” href="https://github.com/hrchioest/react-ecommerce" class="text-link">
                             <i class="fab fa-github"></i>
+                        </a>
+                        <a target=“_blank” href="https://hrchioest.github.io/react-ecommerce/" class="text-link">
+                            <i class="fa fa-link" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
             </div>
-            <div data-name="html" class="projects">
-                <a href="https://hrchioest.github.io/React-rutina-gym/" class="text-link">
+            <div data-name="react" class="projects">
+                <a target=“_blank” href="https://hrchioest.github.io/React-rutina-gym/" class="text-link">
                     <img class="img-projects" src="./img/projects/gym-rutina.png" alt="Imagen de Gym-Rutina" />
                 </a>
                 <div class="container-title-github">
                     <p class="title-projects">Gym-Rutina</p>
                     <div class="container-github-enlace">
-                        <a href="https://github.com/hrchioest/React-rutina-gym" class="text-link">
+                        <a target=“_blank” href="https://github.com/hrchioest/React-rutina-gym" class="text-link">
                             <i class="fab fa-github"></i>
+                        </a>
+                        <a target=“_blank” href="https://hrchioest.github.io/React-rutina-gym/" class="text-link">
+                            <i class="fa fa-link" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
             </div>
-            <div data-name="html" class="projects">
-                <a href="https://hrchioest.github.io/Pokedex-info/" class="text-link">
+            <div data-name="js" class="projects">
+                <a target=“_blank” href="https://hrchioest.github.io/Pokedex-info/" class="text-link">
                     <img class="img-projects" src="./img/projects/poke-info.png" alt="Imagen de poke-info" />
                 </a>
                 <div class="container-title-github">
                     <p class="title-projects">Poke-info</p>
                     <div class="container-github-enlace">
-                        <a href="https://github.com/hrchioest/Pokedex-info" class="text-link">
+                        <a target=“_blank” href="https://github.com/hrchioest/Pokedex-info" class="text-link">
                             <i class="fab fa-github"></i>
+                        </a>
+                        <a target=“_blank” href="https://hrchioest.github.io/Pokedex-info/" class="text-link">
+                            <i class="fa fa-link" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
 
             </div>
             <div data-name="html" class="projects">
-                <a href="https://hrchioest.github.io/Landing-Ada/" class="text-link">
+                <a target=“_blank” href="https://hrchioest.github.io/Landing-Ada/" class="text-link">
                     <img class="img-projects" src="./img/projects/landing-ada.png" alt="Imagen de landing-ada" />
                 </a>
                 <div class="container-title-github">
                     <p class="title-projects">Landing-Ada</p>
                     <div class="container-github-enlace">
-                        <a href="https://github.com/hrchioest/Landing-Ada" class="text-link">
+                        <a target=“_blank” href="https://github.com/hrchioest/Landing-Ada" class="text-link">
                             <i class="fab fa-github"></i>
+                        </a>
+                        <a target=“_blank” href="https://hrchioest.github.io/Landing-Ada/" class="text-link">
+                            <i class="fa fa-link" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
             </div>
             <div data-name="html" class="projects">
-                <a href="http://hrchioest.github.io/portfolio" class="text-link">
+                <a target=“_blank” href="http://hrchioest.github.io/portfolio" class="text-link">
                     <img class="img-projects" src="./img/projects/portfolio.png" alt="Imagen de portfolio" />
                 </a>
                 <div class="container-title-github">
                     <p class="title-projects">Portfolio</p>
                     <div class="container-github-enlace">
-                        <a href="https://github.com/hrchioest/portfolio" class="text-link">
+                        <a target=“_blank” href="https://github.com/hrchioest/portfolio" class="text-link">
                             <i class="fab fa-github"></i>
+                        </a>
+                        <a target=“_blank” href="http://hrchioest.github.io/portfolio" class="text-link">
+                            <i class="fa fa-link" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
-
             </div>
+
         </div>
     </section>
 
     <footer>
         <div class="container-contacto" id="contacto">
-            <a target="_blank" href="https://github.com/hrchioest">
+            <a target=“_blank” target="_blank" href="https://github.com/hrchioest">
                 <i class="fab fa-github"></i>
             </a>
 
-            <a target="_blank" href="https://www.linkedin.com/in/rocio-esteban">
+            <a target=“_blank” target="_blank" href="https://www.linkedin.com/in/rocio-esteban">
                 <i class="fab fa-linkedin"></i>
             </a>
 
-            <a target="_blank" href="mailto:hr.chio@gmail.com">
+            <a target=“_blank” target="_blank" href="mailto:hr.chio@gmail.com">
                 <i class="fas fa-envelope-square"></i>
             </a>
         </div>

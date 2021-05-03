@@ -35,3 +35,12 @@ for (let button of buttonProjects) {
     }
   };
 }
+
+const fn = () => {
+  return new Typed("#typed", {
+    stringsElement: "#typed-strings",
+    typeSpeed: 40
+  });
+};
+window.attachEvent("onload", fn);
+console.log("func", fn());

@@ -69,7 +69,7 @@
 }
 @media (max-width: 767px) {
   .container-about {
-    width: 300px;
+    width: 346px;
   }
 
   .section-about {
@@ -232,6 +232,7 @@ ul {
 @media (max-width: 767px) {
   header {
     margin: 0;
+    justify-content: space-between;
   }
 
   #ul-header {
@@ -481,6 +482,7 @@ i {
 @media (max-width: 767px) {
   .container-projects {
     margin-top: 0;
+    padding: 0;
   }
 
   .container-texts-project {
@@ -491,6 +493,10 @@ i {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+  }
+
+  .projects {
+    margin: 10px 0;
   }
 }
 footer {

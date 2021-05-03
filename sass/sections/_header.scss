@@ -139,6 +139,7 @@ ul {
 @include phone {
   header {
     margin: 0;
+    justify-content: space-between;
   }
   #ul-header {
     display: none;

@@ -34,6 +34,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 324px) {
+  .button-cv,
+.button-project {
+    margin: 0;
+  }
+}
 .section-about {
   display: flex;
   align-items: center;
@@ -69,7 +75,8 @@
 }
 @media (max-width: 767px) {
   .container-about {
-    width: 346px;
+    width: 100%;
+    margin-top: 10px;
   }
 
   .section-about {
@@ -247,6 +254,10 @@ ul {
     display: block;
     font-size: 30px;
     color: #66d7c4;
+  }
+
+  .space-name {
+    font-size: 23px;
   }
 }
 .text-home {
@@ -494,10 +505,16 @@ i {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    justify-content: center;
   }
 
   .projects {
     margin: 10px 0;
+    padding: 10px 0;
+  }
+
+  .space-project {
+    margin: 0;
   }
 }
 footer {
@@ -570,6 +587,11 @@ section {
 
 .container-texts {
   margin: 0;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container-texts {
+    margin: 0 31px;
+  }
 }
 
 .text-paragraph {

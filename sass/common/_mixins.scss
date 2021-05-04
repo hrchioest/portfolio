@@ -42,3 +42,10 @@
 .button-cv {
   @include button(18px);
 }
+
+@media (max-width: 324px) {
+  .button-cv,
+  .button-project {
+    margin: 0;
+  }
+}

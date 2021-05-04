@@ -138,7 +138,7 @@ ul {
 .menu-mobile {
   z-index: 1;
   position: fixed;
-  bottom: 728px;
+  bottom: 805px;
   right: 0;
   transition: 1s;
 }
@@ -549,6 +549,11 @@ h1 {
 
 section {
   padding: 40px;
+}
+@media (max-width: 767px) {
+  section {
+    padding: 0;
+  }
 }
 
 .title {
